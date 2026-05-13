@@ -1,0 +1,17 @@
+h1 {
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+
+h2 {
+    position: absolute;
+    left: 150px;
+    top: 120px;
+}
+
+h3 {
+    position: fixed;
+    left: 200px;
+    top: 10px;
+}

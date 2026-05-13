@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.header {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.main {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer {
+    background-color: lightcoral;
+    text-align: center;
+    padding: 20px;
+}

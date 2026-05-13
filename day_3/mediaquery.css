@@ -1,0 +1,26 @@
+body {
+    margin: 10;
+    padding: 10;
+}
+
+.box {
+    width: 130px;
+    height: 120px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    margin: 115px auto;
+    border-radius: 20px;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 1600px) {
+    .box {
+        background-color: red;
+        width: 200px;
+        height: 150px;
+    }
+}

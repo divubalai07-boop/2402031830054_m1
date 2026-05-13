@@ -1,0 +1,15 @@
+            #division1 {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 45px;
+                margin-bottom: 200px;
+                float: left;
+            }
+            
+            #division2 {
+                background-color: #d0d0d0;
+                padding: 20px;
+                border-radius: 500px;
+                margin-bottom: 2880px;
+                float: right;
+            }

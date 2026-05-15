@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Factorial Using Nested If Else</title>
+</head>
+
+<body>
+
+    <script>
+        let num = prompt("Enter any number:");
+        let fact = 1;
+
+        if (num >= 0) {
+
+            if (num == 0 || num == 1) {
+                document.write("Factorial of " + num + " = 1");
+            } else {
+                for (let i = 1; i <= num; i++) {
+                    fact = fact * i;
+                }
+
+                document.write("Factorial of " + num + " = " + fact);
+            }
+
+        } else {
+            document.write("Please enter a positive number");
+        }
+    </script>
+
+</body>
+
+</html>

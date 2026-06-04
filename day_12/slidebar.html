@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Sidebar</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        .menu-btn {
+            margin: 20px;
+            padding: 10px 20px;
+            background: #2874f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #fff;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .sidebar h2 {
+            background: #2874f0;
+            color: white;
+            padding: 15px;
+        }
+        
+        .sidebar ul {
+            list-style: none;
+        }
+        
+        .sidebar ul li {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+        
+        .sidebar ul li:hover {
+            background: #f1f1f1;
+        }
+        
+        .close-btn {
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="menu-btn">☰ Menu</button>
+
+    <div class="sidebar">
+        <h2>
+            Categories
+            <span class="close-btn">✖</span>
+        </h2>
+
+        <ul>
+            <li>Mobiles</li>
+            <li>Fashion</li>
+            <li>Electronics</li>
+            <li>Home & Furniture</li>
+            <li>Books</li>
+            <li>Grocery</li>
+        </ul>
+    </div>
+
+    <script>
+        $(".menu-btn").click(function() {
+            $(".sidebar").animate({
+                left: "0"
+            }, 300);
+        });
+
+        $(".close-btn").click(function() {
+            $(".sidebar").animate({
+                left: "-250px"
+            }, 300);
+        });
+    </script>
+
+</body>
+
+</html>

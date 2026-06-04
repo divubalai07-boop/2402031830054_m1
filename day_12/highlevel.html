@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Effects Demo</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        p {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+        
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>jQuery Effects Example</h2>
+
+    <p id="p1">Paragraph 1 - Hide Effect</p>
+    <p id="p2">Paragraph 2 - Show Effect</p>
+    <p id="p3">Paragraph 3 - Fade Out Effect</p>
+    <p id="p4">Paragraph 4 - Fade In Effect</p>
+    <p id="p5">Paragraph 5 - CSS Change Effect</p>
+
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="fadeOutBtn">Fade Out</button>
+    <button id="fadeInBtn">Fade In</button>
+    <button id="cssBtn">Change CSS</button>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#p4").hide();
+
+            $("#hideBtn").click(function() {
+                $("#p1").hide();
+            });
+
+            $("#showBtn").click(function() {
+                $("#p2").show();
+            });
+
+            $("#fadeOutBtn").click(function() {
+                $("#p3").fadeOut("slow");
+            });
+
+            $("#fadeInBtn").click(function() {
+                $("#p4").fadeIn();
+            });
+
+            $("#cssBtn").click(function() {
+                $("#p5").css({
+                    "background-color": "yellow",
+                    "color": "red",
+                    "font-size": "22px"
+                });
+
+                alert("CSS Applied Successfully!");
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

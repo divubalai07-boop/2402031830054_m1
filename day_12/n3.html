@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Textbox Example</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <input type="text" id="txtName" placeholder="Enter your name">
+
+    <button id="btn">Show Text</button>
+    <span id="demo"></span>
+
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(function() {
+                var name = $("#txtName").val();
+
+                $("#demo").text(name)
+                    .show();
+
+            });
+
+
+        });
+    </script>
+
+</body>
+
+</html>

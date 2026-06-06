@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sankalp Homeo Clinic</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Top Header -->
+    <div class="top-bar">
+
+        <div class="top-left">
+            <i class="fa-solid fa-location-dot"></i> Kailash Nagar -1 Opp. S.T. Bus Station, Nr. I.T.I., Jamnagar, Gujarat
+        </div>
+
+        <div class="top-right">
+            <i class="fa-solid fa-phone"></i> +91 7984552007
+        </div>
+
+    </div>
+
+    <!-- Navbar -->
+    <header>
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                🌿
+            </div>
+
+            <div>
+                <h2>Sankalp</h2>
+                <p>Homeo Clinic</p>
+            </div>
+
+        </div>
+
+        <nav>
+
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#appointment">Appointment</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <a href="tel:7984552007" class="call-btn">
+Call Me
+</a>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h4>Welcome To</h4>
+
+            <h1>
+                Sankalp <br> Homeo Clinic
+            </h1>
+
+            <p>
+                Every Homeopathic Related Treatment Available with trusted care and natural healing..
+            </p>
+
+            <div class="experience-box">
+
+                <h2>20+ </h2>
+                <h4> years experience</h4>
+            </div>
+
+            <div class="hero-buttons">
+
+                <a href="tel:7984552007" class="btn blue">
+Call Now
+</a>
+
+                <a href="https://wa.me/918780920629" target="_blank" class="btn green">
+
+WhatsApp
+</a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="doctor.jpg" alt="Doctor">
+
+            <div class="doctor-card">
+                <h3>Dr. Sanjay Bhanderi</h3>
+                <p>Homeopathy Specialist</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="doctor.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+
+            <h4>About Clinic</h4>
+
+            <h2>
+                Sankalp Homeo Clinic
+            </h2>
+
+            <p>
+                Sankalp Homeo Clinic provides trusted and effective homeopathic treatment for every health problem. We focus on natural healing with safe and reliable treatment methods.
+            </p>
+
+            <div class="about-points">
+
+                <div>
+                    <i class="fa-solid fa-check"></i> Trusted Treatment
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i> 20+ Years Experience
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i> Natural Healing
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+
+        <div class="title">
+
+            <h4>Our Services</h4>
+            <h2>Homeopathic Treatments</h2>
+
+        </div>
+
+        <div class="service-container">
+
+            <div class="card">
+                <i class="fa-solid fa-user-doctor"></i>
+                <h3>General Treatment</h3>
+                <p>Complete homeopathic treatment.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Hair Problems</h3>
+                <p>Hair fall & scalp treatment.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-face-smile"></i>
+                <h3>Skin Problems</h3>
+                <p>Skin & allergy treatment.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-child"></i>
+                <h3>Child Care</h3>
+                <p>Natural child healthcare.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-disease"></i>
+                <h3>acute and chronic disease</h3>
+                <p>acute = short-lived & chronic = long-lasting disease care.</p>
+
+            </div>
+
+    </section>
+
+    <!-- Appointment -->
+    <section class="appointment" id="appointment">
+
+        <div class="appointment-box">
+
+            <h2>Book Appointment</h2>
+
+
+
+            <form onsubmit="sendToWhatsApp(); return false;">
+
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <input type="number" id="phone" placeholder="Phone Number" required>
+
+                <input type="date" id="date" required>
+
+                <input type="text" id="city" placeholder="Your City" required>
+
+                <textarea id="problem" placeholder="Describe Your Problem" required>
+
+                </textarea>
+
+                <button type="submit ">
+Book Appointment
+</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact " id="contact ">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            📍 Kailash Nagar -1 Opp. S.T. Bus Station, Nr. I.T.I., Jamnagar
+        </p>
+
+        <p>
+            📞 7984552007,
+        </p>
+
+        <a href="https://maps.app.goo.gl/ChYD9dQHsEajioXT9 " target="_blank " class="map-btn ">
+
+Open Google Map
+
+</a>
+
+    </section>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/918780920629 " class="whatsapp " target="_blank ">
+
+        <i class="fa-brands fa-whatsapp "></i>
+
+    </a>
+    <script>
+        function sendToWhatsApp() {
+
+            let name =
+                document.getElementById("name").value;
+
+            let phone =
+                document.getElementById("phone").value;
+
+            let date =
+                document.getElementById("date").value;
+
+            let city =
+                document.getElementById("city").value;
+
+            let problem =
+                document.getElementById("problem").value;
+
+            let whatsappNumber =
+                "918780920629";
+
+            let message =
+                `*New Appointment Request*%0A
+👤 Name: ${name}%0A
+📞 Phone: ${phone}%0A
+📅 Appointment Date: ${date}%0A
+🏙 City: ${city}%0A
+🩺 Problem: ${problem}`;
+
+            let whatsappURL =
+                `https://wa.me/${whatsappNumber}?text=${message}`;
+
+            window.open(
+                whatsappURL,
+                "_blank "
+            );
+
+        }
+    </script>
+</body>
+
+</html>
